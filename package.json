@@ -1,0 +1,26 @@
+{
+  "name": "single-user-login",
+  "version": "1.0.0",
+  "description": "Allows only one auth instance per user",
+  "repository": "https://github.com/natanaelsimoes/single-user-login.git",
+  "author": "Natanael Simões",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=14.x"
+  },
+  "workspaces": [
+    "api",
+    "app"
+  ],
+  "scripts": {
+    "dev:api": "cd api && npm run dev",
+    "dev:app": "cd app && npm run start",
+    "dev": "pm2 start pm2.config.js && pm2 monit && pm2 stop all && pm2 delete all",
+    "pm2": "pm2"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "pm2": "^5.1.1"
+  }
+}

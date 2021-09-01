@@ -1,0 +1,36 @@
+{
+  "name": "single-user-login-api",
+  "version": "1.0.0",
+  "description": "API",
+  "main": "./src/Server.js",
+  "author": "Natanael Simoes",
+  "license": "MIT",
+  "scripts": {
+    "dev": "babel-node ./src/Server.js"
+  },
+  "engines": {
+    "node": ">=14.x"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/runtime": "^7.10.2",
+    "babel-eslint": "^10.1.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.21.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "express": "^4.17.1",
+    "helmet": "^3.21.3",
+    "jsonwebtoken": "^8.5.1",
+    "socket.io": "^4.2.0"
+  }
+}
